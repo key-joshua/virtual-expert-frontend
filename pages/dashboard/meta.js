@@ -18,23 +18,23 @@ const Meta = () => {
   const [blogData, setBlogData] = useState({});
   const [letsTalkData, setletsTalkData] = useState({});
   useEffect(() => {
-    fetch("https://sleepy-mesa-08037.herokuapp.com/metaHome")
+    fetch("https://virtual-expert-backend.herokuapp.com/metaHome")
       .then((res) => res.json())
       .then((data) => setHomeData(data[0]));
 
-    fetch("https://sleepy-mesa-08037.herokuapp.com/metaAbout")
+    fetch("https://virtual-expert-backend.herokuapp.com/metaAbout")
       .then((res) => res.json())
       .then((data) => setAboutData(data[0]));
 
-    fetch("https://sleepy-mesa-08037.herokuapp.com/metaService")
+    fetch("https://virtual-expert-backend.herokuapp.com/metaService")
       .then((res) => res.json())
       .then((data) => setServiceData(data[0]));
 
-    fetch("https://sleepy-mesa-08037.herokuapp.com/metaBlog")
+    fetch("https://virtual-expert-backend.herokuapp.com/metaBlog")
       .then((res) => res.json())
       .then((data) => setBlogData(data[0]));
 
-    fetch("https://sleepy-mesa-08037.herokuapp.com/metaLetsTalk")
+    fetch("https://virtual-expert-backend.herokuapp.com/metaLetsTalk")
       .then((res) => res.json())
       .then((data) => setletsTalkData(data[0]));
   }, [number]);

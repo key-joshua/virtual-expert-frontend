@@ -12,7 +12,7 @@ const Service = ({ serviceData, setNumber }) => {
     const title = data.title || newTitle;
     const description = data.description || newDescription;
 
-    fetch("https://sleepy-mesa-08037.herokuapp.com/metaService/update", {
+    fetch("https://virtual-expert-backend.herokuapp.com/metaService/update", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

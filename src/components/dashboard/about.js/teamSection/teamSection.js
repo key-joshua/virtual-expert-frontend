@@ -12,7 +12,7 @@ const AdminTeamSection = () => {
   useEffect(() => {
     const loadData = async () => {
       const aboutTeamResponse = await fetch(
-        "https://sleepy-mesa-08037.herokuapp.com/aboutTeam"
+        "https://virtual-expert-backend.herokuapp.com/aboutTeam"
       );
       const aboutTeamData = await aboutTeamResponse.json();
       setAdminTeamSection(aboutTeamData[0]);
@@ -23,7 +23,7 @@ const AdminTeamSection = () => {
   const onSubmit = (data) => {
     const title = data.title || teamSection.title;
     const discription = data.discription || teamSection.discription;
-    fetch("https://sleepy-mesa-08037.herokuapp.com/aboutTeam/update", {
+    fetch("https://virtual-expert-backend.herokuapp.com/aboutTeam/update", {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ title, _id: teamSection._id, discription }),

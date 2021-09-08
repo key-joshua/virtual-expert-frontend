@@ -39,7 +39,7 @@ const Signin = () => {
     const username = data.username;
     const password = data.password;
 
-    fetch("https://sleepy-mesa-08037.herokuapp.com/adminLogin/login", {
+    fetch("https://virtual-expert-backend.herokuapp.com/adminLogin/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password }),
@@ -79,7 +79,7 @@ const Signin = () => {
     };
 
     fetch(
-      "https://sleepy-mesa-08037.herokuapp.com/adminLogin/update/verificationCode",
+      "https://virtual-expert-backend.herokuapp.com/adminLogin/update/verificationCode",
       {
         method: "PUT",
         headers: { "content-type": "application/json" },

@@ -29,11 +29,11 @@ const LetsTalks = ({ footerData, metaLetsTalk }) => {
 export default LetsTalks;
 
 export async function getServerSideProps() {
-  const res = await fetch("https://sleepy-mesa-08037.herokuapp.com/footer");
+  const res = await fetch("https://virtual-expert-backend.herokuapp.com/footer");
   const footerData = await res.json();
 
   const resmetaLetsTalk = await fetch(
-    "https://sleepy-mesa-08037.herokuapp.com/metaLetsTalk"
+    "https://virtual-expert-backend.herokuapp.com/metaLetsTalk"
   );
   const metaLetsTalk = await resmetaLetsTalk.json();
 

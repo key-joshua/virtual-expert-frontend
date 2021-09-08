@@ -12,7 +12,7 @@ const About = ({ aboutData, setNumber }) => {
     const title = data.title || newTitle;
     const description = data.description || newDescription;
 
-    fetch("https://sleepy-mesa-08037.herokuapp.com/metaAbout/update", {
+    fetch("https://virtual-expert-backend.herokuapp.com/metaAbout/update", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

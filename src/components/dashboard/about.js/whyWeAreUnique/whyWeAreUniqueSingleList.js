@@ -7,7 +7,7 @@ const WhyWeAreUniqueSingleList = ({ answer, index, setNumber }) => {
 
   const onSubmit = (data) => {
     const title = data.title || answer.title;
-    fetch("https://sleepy-mesa-08037.herokuapp.com/aboutUniqueList/update", {
+    fetch("https://virtual-expert-backend.herokuapp.com/aboutUniqueList/update", {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ title, _id: answer._id }),

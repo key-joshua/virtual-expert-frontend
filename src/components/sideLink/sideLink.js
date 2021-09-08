@@ -9,7 +9,7 @@ const SideLink = () => {
   const [footerLink, setFooterLink] = useState({});
 
   useEffect(() => {
-    fetch("https://sleepy-mesa-08037.herokuapp.com/footer")
+    fetch("https://virtual-expert-backend.herokuapp.com/footer")
       .then((res) => res.json())
       .then((data) => setFooterLink(data[0]));
   }, []);

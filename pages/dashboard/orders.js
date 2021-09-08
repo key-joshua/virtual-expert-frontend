@@ -20,7 +20,7 @@ const Orders = () => {
 
   useEffect(() => {
     const loadData = async () => {
-      const res = await fetch("https://sleepy-mesa-08037.herokuapp.com/order", {
+      const res = await fetch("https://virtual-expert-backend.herokuapp.com/order", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ page: page }),
@@ -42,7 +42,7 @@ const Orders = () => {
 
   const handleDeleteOrder = (id) => {
     const _id = id;
-    fetch("https://sleepy-mesa-08037.herokuapp.com/order/delete", {
+    fetch("https://virtual-expert-backend.herokuapp.com/order/delete", {
       method: "DELETE",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ _id }),

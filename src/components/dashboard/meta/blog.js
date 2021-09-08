@@ -12,7 +12,7 @@ const Blog = ({ blogData, setNumber }) => {
     const title = data.title || newTitle;
     const description = data.description || newDescription;
 
-    fetch("https://sleepy-mesa-08037.herokuapp.com/metaBlog/update", {
+    fetch("https://virtual-expert-backend.herokuapp.com/metaBlog/update", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

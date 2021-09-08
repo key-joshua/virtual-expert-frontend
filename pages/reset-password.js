@@ -21,7 +21,7 @@ const ResetPassword = () => {
   const handleCheckVerificationCode = (data, e) => {
     const verificationCode = data.verificationCode;
     fetch(
-      "https://sleepy-mesa-08037.herokuapp.com/adminLogin/checkVerificationCode",
+      "https://virtual-expert-backend.herokuapp.com/adminLogin/checkVerificationCode",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -43,7 +43,7 @@ const ResetPassword = () => {
   const handleResetPassword = async (data) => {
     const password = data.password;
     fetch(
-      "https://sleepy-mesa-08037.herokuapp.com/adminLogin/update/password",
+      "https://virtual-expert-backend.herokuapp.com/adminLogin/update/password",
       {
         method: "PUT",
         headers: { "content-type": "application/json" },

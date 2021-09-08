@@ -358,7 +358,7 @@ export default Invoice;
 
 export async function getServerSideProps() {
   const res = await fetch(
-    "https://sleepy-mesa-08037.herokuapp.com/servicesCard"
+    "https://virtual-expert-backend.herokuapp.com/servicesCard"
   );
   const serviceData = await res.json();
 

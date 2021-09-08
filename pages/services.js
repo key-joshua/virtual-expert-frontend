@@ -59,22 +59,22 @@ const Services = ({
 
 export async function getServerSideProps(context) {
   const res = await fetch(
-    "https://sleepy-mesa-08037.herokuapp.com/servicesCard"
+    "https://virtual-expert-backend.herokuapp.com/servicesCard"
   );
   const servicesCardData = await res.json();
 
   const whatWeDoRes = await fetch(
-    "https://sleepy-mesa-08037.herokuapp.com/whatWeDo"
+    "https://virtual-expert-backend.herokuapp.com/whatWeDo"
   );
   const whatWeDo = await whatWeDoRes.json();
 
   const serviceCardHeaderRes = await fetch(
-    "https://sleepy-mesa-08037.herokuapp.com/serviceCardHeader"
+    "https://virtual-expert-backend.herokuapp.com/serviceCardHeader"
   );
   const serviceCardHeader = await serviceCardHeaderRes.json();
 
   const resMetaService = await fetch(
-    "https://sleepy-mesa-08037.herokuapp.com/metaService"
+    "https://virtual-expert-backend.herokuapp.com/metaService"
   );
   const metaService = await resMetaService.json();
 

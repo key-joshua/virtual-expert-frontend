@@ -21,15 +21,15 @@ const Service = () => {
 
   useEffect(() => {
     setShowSpinner(true);
-    fetch("https://sleepy-mesa-08037.herokuapp.com/whatWeDo")
+    fetch("https://virtual-expert-backend.herokuapp.com/whatWeDo")
       .then((res) => res.json())
       .then((data) => setServiceBanner(data));
 
-    fetch("https://sleepy-mesa-08037.herokuapp.com/serviceCardHeader")
+    fetch("https://virtual-expert-backend.herokuapp.com/serviceCardHeader")
       .then((res) => res.json())
       .then((data) => setServiceCardHeader(data));
 
-    fetch("https://sleepy-mesa-08037.herokuapp.com/servicesCard")
+    fetch("https://virtual-expert-backend.herokuapp.com/servicesCard")
       .then((res) => res.json())
       .then((data) => {
         setServicesCardData(data);
